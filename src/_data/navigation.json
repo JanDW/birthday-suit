@@ -1,0 +1,9 @@
+{
+  "items": [
+    {
+      "text": "Birthday Suit",
+      "url": "/",
+      "cssClass": "font-semibold text-current border-0 hover:border-b-2"
+    }
+  ]
+}
