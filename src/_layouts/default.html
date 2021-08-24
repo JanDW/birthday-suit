@@ -1,0 +1,15 @@
+---
+title: Wild Peaches
+---
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  {% include 'head.html' %}
+  <body
+    class="overflow-x-hidden {% if bodyClass %}{{ bodyClass }}{% endif %}"
+  >
+    {% include 'global-nav.html' %} 
+    {{ content | safe }}
+    {% include 'footer.html' %}
+    {% include 'scripts.html' %}
+  </body>
+</html>

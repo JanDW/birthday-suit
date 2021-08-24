@@ -1,0 +1,18 @@
+<footer class="text-base o-center mt-8 pb-16">
+  <div class="o-stack text-center text-gray-500">
+    <p class="">
+      &copy; 2020&thinsp;&ndash;&thinsp;{{ helpers.currentYear() }} 
+        {% for author in site.authors %}
+          {{ author.firstName}} {{ author.lastName }} 
+          {%- if not loop.last %} and {%- endif %} 
+        {% endfor %}
+    </p>
+    <p class="text-primary">
+      <a href="#top" class="u-border-current">↑ To Top</a>
+      &middot;
+      <a href="mailto:{{ site.email }}" class="u-border-current">Email Us</a>
+      &middot;
+      <a href="{{ site.repository }}" class="u-border-current">GitHub</a>
+    </p>
+  </div>
+</footer>
