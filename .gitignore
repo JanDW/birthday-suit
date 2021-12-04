@@ -1,4 +1,4 @@
-node_modules/
+node_modules
 www/
 tmp/
 .cache/
@@ -9,3 +9,4 @@ package-lock.json
 src/assets/styles/style.min.css
 .vscode/
 .eslintcache
+node_modules.nosync
