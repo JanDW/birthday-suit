@@ -1,7 +1,35 @@
-*,
+/* 
+  Use border-box 
+*/ 
+
+/* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+
+html {
+  box-sizing: border-box;
+}
+
 *::before,
 *::after {
+  box-sizing: inherit;
 }
+
+/*
+  Remove default margins applied by UA agent 
+*/
+
+* {
+  margin: 0;
+}
+
+
+/**/
+
+html, body {
+  /* 100vh has issues on mobile browsers where the address bar collapses when scrolling and the vh unit changes, so sticking with old percentage trick, until the new units have more coverage https://caniuse.com/viewport-unit-variants */
+  min-height: 100%;
+}
+
+
 
 body {
   @apply overflow-x-hidden min-h-screen m-0 p-0;
